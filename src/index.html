@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/colors/default-dark.css" id="theme" rel="stylesheet">
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader__figure"></div>
+            <p class="loader__label">Izipay</p>
+        </div>
+    </div>
+
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon -->
+                        <b>
+                            Izi
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text -->
+                        <span>pay</span> 
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="wrapper" style="background: #f4f6f9;padding-top: 70px;">
+            <div class="container">
+                <!-- ============================================================== -->
+                <!-- Container fluid  -->
+                <!-- ============================================================== -->
+                <div class="container-fluid">
+                    <!-- ============================================================== -->
+                    <!-- Bread crumb and right sidebar toggle -->
+                    <!-- ============================================================== -->
+                    <div class="row page-titles">
+                        <div class="col-md-5 align-self-center">
+                            <h3 class="text-themecolor">MI IZIWEB</h3>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body p-b-0">
+                            <h4 class="card-title">Crea tú página web</h4>
+                            <h6 class="card-subtitle">completa los 5 pasos básicos</h6> </div>
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs customtab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#paso1" role="tab" aria-expanded="true">
+                                    <span class="hidden-sm-up"><i class="ti-home"></i></span>
+                                    <span class="hidden-xs-down">Paso 1</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#paso2" role="tab" aria-expanded="false">
+                                    <span class="hidden-sm-up"><i class="ti-user"></i></span> 
+                                    <span class="hidden-xs-down">Paso 2</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#paso3" role="tab" aria-expanded="false">
+                                    <span class="hidden-sm-up"><i class="ti-email"></i></span>
+                                    <span class="hidden-xs-down">Paso 3</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#paso4" role="tab" aria-expanded="false">
+                                    <span class="hidden-sm-up"><i class="ti-email"></i></span>
+                                    <span class="hidden-xs-down">Paso 4</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#paso5" role="tab" aria-expanded="false">
+                                    <span class="hidden-sm-up"><i class="ti-email"></i></span>
+                                    <span class="hidden-xs-down">Paso 5</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <!--tab1-->
+                            <div class="tab-pane active" id="paso1" role="tabpanel" aria-expanded="true">
+                                <div class="p-20">
+                                    <form novalidate>
+                                        <div class="form-body">
+                                            <h2><strong>Datos del negocio</strong></h2>
+                                            <div class="row p-t-20">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Nombre del negocio <span class="text-danger">*</span></label>
+                                                        <div class="controls">
+                                                            <input type="text" id="nombre_negocio" required class="form-control" placeholder="Nombre del negocio" data-validation-required-message="Este campo es requerido">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Teléfono del negocio <span class="text-danger">*</span></label>
+                                                        <div class="controls">
+                                                            <input type="text" id="telefono_negocio" class="form-control" required data-validation-containsnumber-regex="(\d)+" data-validation-containsnumber-message="No Characters Allowed, Only Numbers" placeholder="+51...">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Correo electrónico <span class="text-danger">*</span></label>
+                                                        <div class="controls">
+                                                            <input type="email" id="correo_electronico" data-validation-regex-regex="([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})" data-validation-regex-message="Enter Valid Email" class="form-control form-control-danger" placeholder="micorreo@correo...">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                            </div>
+                                            <h3 class="box-title m-t-40">Local</h3>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <h5>¿Cuentas con local? <span class="text-danger">*</span></h5>
+                                                        <fieldset class="controls">
+                                                            <label class="custom-control custom-radio">
+                                                                <input type="radio" value="1" name="local" required id="styled_radio1" class="custom-control-input" data-validation-required-message="Este campo es requerido"> <span class="custom-control-indicator"></span> <span class="custom-control-description">Sí</span> </label>
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <label class="custom-control custom-radio">
+                                                                <input type="radio" value="2" name="local" id="styled_radio2" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description">No</span> </label>
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Dirección</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="direccion" class="form-control" placeholder="Dirección">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Distrito</label>
+                                                        <div class="controls">
+                                                            <select name="select" id="select" class="form-control">
+                                                                <option value="">Selecciona tu distrito</option>
+                                                                <option value="1">India</option>
+                                                                <option value="2">USA</option>
+                                                                <option value="3">UK</option>
+                                                                <option value="4">Canada</option>
+                                                                <option value="5">Dubai</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Provincia</label>
+                                                        <div class="controls">
+                                                            <select name="provincia" id="provincia" class="form-control">
+                                                                <option value="">Selecciona tu provincia</option>
+                                                                <option value="1">Chorrilos</option>
+                                                                <option value="2">Miraflores</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Departamento</label>
+                                                        <div class="controls">
+                                                            <select name="departamento" id="departamento" class="form-control" required>
+                                                                <option value="">Selecciona tu departamento</option>
+                                                                <option value="1">Chorrilos</option>
+                                                                <option value="2">Miraflores</option>
+                                                            </select>                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                            </div>
+                                            <h3 class="box-title m-t-40">Cuenta de abono</h3>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Número de cuenta<span class="text-danger">*</span></label>
+                                                        <div class="controls">
+                                                            <input type="number" id="numero_cuenta" class="form-control" placeholder="Número de cuenta" required data-validation-containsnumber-regex="(\d)+" required data-validation-required-message="Ingresa tu número de cuenta" data-validation-containsnumber-message="No está permitido los caracteres">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label">CCI<span class="text-danger">*</span></label>
+                                                        <div class="controls">
+                                                            <input type="number" id="cci" class="form-control form-control-danger" placeholder="cci..." required data-validation-containsnumber-regex="(\d)+" required data-validation-required-message="Ingresa tu CCI" data-validation-containsnumber-message="No está permitido los caracteres">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Tu banco<span class="text-danger">*</span></label>
+                                                        <div class="controls">
+                                                            <select name="tu_banco" class="form-control" required data-validation-required-message="Selecciona un banco">
+                                                                <option value="">Selecciona tu banco</option>
+                                                                <option value="1">BCP</option>
+                                                                <option value="2">Interbank</option>
+                                                            </select>                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--/span-->
+                                            </div>
+                                            <h3 class="box-title m-t-40">Redes sociales</h3>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Facebook</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="redsocial_facebook" class="form-control" placeholder="url Facebook" >
+                                                        </div>
+                                                        <small class="form-control-feedback">Ingresa la url de tu Facebook</small> </div>
+                                                </div>
+                                                <!--/span-->
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Twitter</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="redsocial_twitter" class="form-control" placeholder="url Twitter" >
+                                                        </div>
+                                                        <small class="form-control-feedback">Ingresa la url de tu Twitter</small> </div>
+                                                </div>
+                                                <!--/span-->
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Instagram</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="redsocial_instagram" class="form-control" placeholder="url Instagram" >
+                                                        </div>
+                                                        <small class="form-control-feedback">Ingresa la url de tu Instagram</small> </div>
+                                                </div>
+                                                <!--/span-->
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label class="control-label">Youtube</label>
+                                                        <div class="controls">
+                                                            <input type="text" id="redsocial_youtube" class="form-control" placeholder="url Youtube" >
+                                                        </div>
+                                                        <small class="form-control-feedback">Ingresa la url de tu Youtube</small> </div>
+                                                </div>
+                                                <!--/span-->
+                                            </div>
+                                        </div>
+                                        <div class="form-actions text-right">
+                                            <button type="submit" class="btn btn-info">Siguiente <i class="ti-arrow-right"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                
+                            </div>
+                            <!--tab2-->
+                            <div class="tab-pane" id="paso2" role="tabpanel" aria-expanded="false">
+                                <div class="p-20">
+                                    <div class="form-body">
+                                        <h2><strong>Contenido Web</strong></h2>
+                                        <div class="row p-t-20">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <h5>Logotipo <span class="text-danger">*</span></h5>
+                                                    <div class="controls">
+                                                        <input type="file" name="file_logotipo" class="form-control" required=""> <div class="help-block"></div></div>
+                                                        <small class="form-control-feedback"> Solo imágenes PNG* </small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h5>Banner Inicio</h5>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <h5>Imagen del banner <span class="text-danger">*</span></h5>
+                                                    <div class="controls">
+                                                        <input type="file" name="file_banner" class="form-control" required=""> <div class="help-block"></div></div>
+                                                        <small class="form-control-feedback">Formato JPG, orientación horizontal, tamaño mínimo 1800px de ancho* </small>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Texto Banner</label>
+                                                    <input type="text" id="texto_banner" class="form-control" placeholder="Texto del banner">
+                                                    <small class="form-control-feedback">Este texto acompañará al banner</small> </div>
+                                            </div>
+                                        </div>
+                                        <h5>¿Quiénes somos?</h5>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <textarea name="quienes_somos" class="form-control" rows="5"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="box-title m-t-40">3 Destacados</h3>
+                                        <h5>Tres beneficios, fortalezas o atributos de tu marca que quieras destacar.</h5>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <input type="text" name="titulo_1" class="form-control" value="Título 1">
+                                                    <small class="form-control-feedback">Máximo 25 caracteres</small>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="form-group">
+                                                    <input type="text" name="texto_1" class="form-control" value="Texto 1">
+                                                    <small class="form-control-feedback">Máximo 150 caracteres</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <input type="text" name="titulo_2" class="form-control" value="Título 2">
+                                                    <small class="form-control-feedback">Máximo 25 caracteres</small>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="form-group">
+                                                    <input type="text" name="texto_2" class="form-control" value="Texto 2">
+                                                    <small class="form-control-feedback">Máximo 150 caracteres</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <input type="text" name="titulo_3" class="form-control" value="Título 3">
+                                                    <small class="form-control-feedback">Máximo 25 caracteres</small>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="form-group">
+                                                    <input type="text" name="texto_3" class="form-control" value="Texto 3">
+                                                    <small class="form-control-feedback">Máximo 150 caracteres</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card card-inverse" style="background-color: #333; border-color: #333;">
+                                            
+                                            <div class="card-body">
+                                                <h3 class="card-title">Ejemplo:</h3>
+                                                <div class="row" style="color: rgba(255, 255, 255, 0.65);">
+                                                    <div class="col-md-4">
+                                                        <h4 style="color: rgba(255, 255, 255, 0.65);">Título:</h4>
+                                                        <p class="card-text">Los mejores insumos</p>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <h4 style="color: rgba(255, 255, 255, 0.65);">Texto:</h4>
+                                                        <p class="card-text">Escogemos minuciosamente los mejores ingredientes y tenemos la receta perfecta para brindarles
+                                                            brownies y blondies que se volverán tus favoritos.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="box-title m-t-40">Elije tu plantilla</h3>
+                                        <h5>En el siguiente enlace vas a poder descargar 9 plantillas. Todas se pueden aplicar a tu rubro, los temas e imágenes son de referencia.</h5>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <button type="button" class="btn waves-effect waves-light btn-block btn-info">Ver plantillas</button>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label text-right">Selecciona una plantilla:</label>
+                                                    <select class="form-control" name="plantilla" multiple="">
+                                                        <optgroup label="NFC EAST">
+                                                            <option>Dallas Cowboys</option>
+                                                            <option>New York Giants</option>
+                                                            <option>Philadelphia Eagles</option>
+                                                            <option>Washington Redskins</option>
+                                                        </optgroup>
+                                                        <optgroup label="NFC NORTH">
+                                                            <option>Chicago Bears</option>
+                                                            <option>Detroit Lions</option>
+                                                            <option>Green Bay Packers</option>
+                                                            <option>Minnesota Vikings</option>
+                                                        </optgroup>
+                                                        <optgroup label="NFC SOUTH">
+                                                            <option>Atlanta Falcons</option>
+                                                            <option>Carolina Panthers</option>
+                                                            <option>New Orleans Saints</option>
+                                                            <option>Tampa Bay Buccaneers</option>
+                                                        </optgroup>
+                                                        <optgroup label="NFC WEST">
+                                                            <option>Arizona Cardinals</option>
+                                                            <option>St. Louis Rams</option>
+                                                            <option>San Francisco 49ers</option>
+                                                            <option>Seattle Seahawks</option>
+                                                        </optgroup>
+                                                        <optgroup label="AFC EAST">
+                                                            <option>Buffalo Bills</option>
+                                                            <option>Miami Dolphins</option>
+                                                            <option>New England Patriots</option>
+                                                            <option>New York Jets</option>
+                                                        </optgroup>
+                                                        <optgroup label="AFC NORTH">
+                                                            <option>Baltimore Ravens</option>
+                                                            <option>Cincinnati Bengals</option>
+                                                            <option>Cleveland Browns</option>
+                                                            <option>Pittsburgh Steelers</option>
+                                                        </optgroup>
+                                                        <optgroup label="AFC SOUTH">
+                                                            <option>Houston Texans</option>
+                                                            <option>Indianapolis Colts</option>
+                                                            <option>Jacksonville Jaguars</option>
+                                                            <option>Tennessee Titans</option>
+                                                        </optgroup>
+                                                        <optgroup label="AFC WEST">
+                                                            <option>Denver Broncos</option>
+                                                            <option>Kansas City Chiefs</option>
+                                                            <option>Oakland Raiders</option>
+                                                            <option>San Diego Chargers</option>
+                                                        </optgroup>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 text-center">
+                                                <img class="card-img-top img-responsive" src="../assets/images/big/img1.jpg" alt="Card image cap">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-actions text-right p-t-20">
+                                        <button type="button" class="btn btn-info"><i class="ti-arrow-left"></i> Anterior </button>
+                                        <button type="button" class="btn btn-info">Siguiente <i class="ti-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--tab3-->
+                            <div class="tab-pane" id="paso3" role="tabpanel" aria-expanded="false">
+                                <div class="p-20">
+                                    <div class="list-products">
+                                        <table class="table vm no-th-brd pro-of-month">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="3">Imagen y nombre</th>
+                                                    <th>Precio</th>
+                                                    <th width="100">Acción</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="sortable-paso3">
+                                                <tr>
+                                                    <td width="50"><i class="ti-arrows-vertical"></i></td>
+                                                    <td style="width:50px;"><span class="round"><img src="images/users/2.jpg" alt="user" width="50"></span></td>
+                                                    <td>Elite Admin</td>
+                                                    <td>$3.9K</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-warning btn-circle"><i class="fa fa-times"></i> </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="50"><i class="ti-arrows-vertical"></i></td>
+                                                    <td style="width:50px;"><span class="round"><img src="images/users/2.jpg" alt="user" width="50"></span></td>
+                                                    <td>Elite Admin</td>
+                                                    <td>$3.9K</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-warning btn-circle"><i class="fa fa-times"></i> </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="50"><i class="ti-arrows-vertical"></i></td>
+                                                    <td style="width:50px;"><span class="round"><img src="images/users/2.jpg" alt="user" width="50"></span></td>
+                                                    <td>Elite Admin</td>
+                                                    <td>$3.9K</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-warning btn-circle"><i class="fa fa-times"></i> </button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="form-body">
+                                        <h2><strong>Productos</strong></h2>
+                                        <div class="row p-t-20">
+                                            <div class="col-md-8">
+                                                <div class="form-group">
+                                                    <label class="control-label">Nombre Producto</label>
+                                                    <input type="text" id="nombre_producto" class="form-control" placeholder="Nombre del producto">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <h5>Imagen del producto <span class="text-danger">*</span></h5>
+                                                    <div class="controls">
+                                                        <input type="file" name="file_logotipo" class="form-control" required=""> <div class="help-block"></div></div>
+                                                        <small class="form-control-feedback">Formato JPG / Tamaño mínimo 1000px x 1000px</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="control-label">Código del producto</label>
+                                                    <input type="text" id="producto_codigo" class="form-control" placeholder="Código del producto">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="control-label">Categoría</label>
+                                                    <input type="text" id="producto_categoria" class="form-control" placeholder="Categoría del producto">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="control-label">Precio</label>
+                                                    <input type="text" id="producto_precio" class="form-control" placeholder="Precio del producto">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">Descripción del producto</label>
+                                                    <textarea name="producto_descripcion" class="form-control" rows="5"></textarea>
+                                                    <small class="form-control-feedback"> Máximo 250 caracteres </small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <button type="button" class="btn waves-effect waves-light btn-info"><i class="ti-save"></i> Guardar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                    
+                                    <div class="form-actions text-right">
+                                        <button type="button" class="btn btn-info"><i class="ti-arrow-left"></i> Anterior </button>
+                                        <button type="button" class="btn btn-info">Siguiente <i class="ti-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--tab4-->
+                            <div class="tab-pane" id="paso4" role="tabpanel" aria-expanded="false">
+                                <div class="p-20">
+                                    <h2><strong>Zonas de envío</strong></h2>
+                                    <h4>¿A qué distritos llega tu delivery?</h4>
+                                    <div class="list-products table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th  colspan="2">Departament</th>
+                                                    <th>Distrito</th>
+                                                    <th width="100">Acción</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="sortable-paso4">
+                                                <tr>
+                                                    <td width="30"><i class="ti-arrows-vertical"></i></td>
+                                                    <td style="width:50px;">Lima</td>
+                                                    <td>Chorrillos</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-warning btn-circle"><i class="fa fa-times"></i> </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="30"><i class="ti-arrows-vertical"></i></td>
+                                                    <td style="width:50px;">Lima</td>
+                                                    <td>Chorrillos</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-warning btn-circle"><i class="fa fa-times"></i> </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="30"><i class="ti-arrows-vertical"></i></td>
+                                                    <td style="width:50px;">Lima</td>
+                                                    <td>Chorrillos</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-warning btn-circle"><i class="fa fa-times"></i> </button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="form-body">
+                                        <h2><strong>Productos</strong></h2>
+                                        <div class="row p-t-20">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="control-label">Departamento</label>
+                                                    <input type="text" id="envio_departamento" class="form-control" placeholder="Departamento de envío">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="control-label">Provincia</label>
+                                                    <input type="text" id="envio_provincia" class="form-control" placeholder="Provincia de envío">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="control-label">Distrito</label>
+                                                    <input type="text" id="envio_distrito" class="form-control" placeholder="Distrito de envío">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Costo de envío</label>
+                                                    <input type="text" id="envio_costo" class="form-control" placeholder="Costo de envío">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Tiempo de entrega</label>
+                                                    <input type="text" id="envio_tiempo_entrega" class="form-control" placeholder="Tiempo de entrega">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <button type="button" class="btn waves-effect waves-light btn-info"><i class="ti-save"></i> Guardar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                    <div class="form-actions text-right">
+                                        <button type="button" class="btn btn-info"><i class="ti-arrow-left"></i> Anterior </button>
+                                        <button type="button" class="btn btn-info">Siguiente <i class="ti-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--tab5-->
+                            <div class="tab-pane " id="paso5" role="tabpanel" aria-expanded="false">
+                                <div class="p-20">
+                                    <h2><strong>Dominio</strong></h2>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="control-label">¿Tienes dominio?</label>
+                                                <div class="form-check">
+                                                    <label class="custom-control custom-radio">
+                                                        <input id="dominio_1" name="dominio" type="radio" checked="" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="custom-control-description">Sí</span>
+                                                    </label>
+                                                    <label class="custom-control custom-radio">
+                                                        <input id="dominio_2" name="dominio" type="radio" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="custom-control-description">No</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="control-label">dominio</label>
+                                                <input type="text" id="dominio" name="dominio_name" class="form-control" placeholder="www.dominio">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <label class="control-label">¿Selecciona una opción?</label>
+                                                <div class="form-check">
+                                                    <label class="custom-control custom-radio">
+                                                        <input id="dominio_3" name="dominio_dot" type="radio" checked="" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="custom-control-description">.PE</span>
+                                                    </label>
+                                                    <label class="custom-control custom-radio">
+                                                        <input id="dominio_4" name="dominio_dot" type="radio" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="custom-control-description">.COM.PE</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <small class="form-control-feedback"> De no encontrar disponibilidad del dominio elegido nos contactaremos para sugerirles opciones  </small> 
+                                        </div>
+                                    </div>
+                                    <h3 class="box-title m-t-40">Datos para el registro de dominio</h3>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label class="control-label">Número</label>
+                                                <input type="number" id="numero_dominio" name="dominio_name" class="form-control" placeholder="número">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label class="control-label">¿Selecciona una opción?</label>
+                                                <div class="form-check">
+                                                    <label class="custom-control custom-radio">
+                                                        <input id="dominio_3" name="ruc_dni" type="radio" checked="" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="custom-control-description">RUC</span>
+                                                    </label>
+                                                    <label class="custom-control custom-radio">
+                                                        <input id="dominio_4" name="ruc_dni" type="radio" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="custom-control-description">DNI</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label class="control-label">Razón social / Nombre</label>
+                                                <input type="text" id="razon_social" name="razon_social" class="form-control" placeholder="Razón social / Nombre">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label class="control-label">¿Selecciona una opción?</label>
+                                                <div class="form-check">
+                                                    <label class="custom-control custom-radio">
+                                                        <input id="dominio_5" name="razon_social" type="radio" checked="" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="custom-control-description">Razón social</span>
+                                                    </label>
+                                                    <label class="custom-control custom-radio">
+                                                        <input id="dominio_6" name="razon_social" type="radio" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="custom-control-description">Nombre</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Email</label>
+                                                <input type="number" id="email_dominio" name="email_dominio" class="form-control" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Teléfono</label>
+                                                <input type="text" id="telefono_dominio" name="telefono_dominio" class="form-control" placeholder="Telf...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label class="control-label">Dirección</label>
+                                                <input type="number" id="direccion_dominio" name="direccion_dominio" class="form-control" placeholder="Dirección">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label class="control-label">Distrito</label>
+                                                <input type="text" id="distrito_dominio" name="distrito_dominio" class="form-control" placeholder="Distrito">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label class="control-label">Provincia</label>
+                                                <input type="number" id="provincia_dominio" name="provincia_dominio" class="form-control" placeholder="Provincia">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label class="control-label">Departamento</label>
+                                                <input type="text" id="departamento_dominio" name="departamento_dominio" class="form-control" placeholder="Departamento">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    
+                                    <div class="form-actions text-right">
+                                        <button type="button" class="btn btn-success"> <i class="fa fa-check"></i> Guardar Web</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Container fluid  -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- footer -->
+                <!-- ============================================================== -->
+                <footer class="footer"> Izipay </footer>
+                <!-- ============================================================== -->
+                <!-- End footer -->
+                <!-- ============================================================== -->
+            </div>
+        </div>
+        
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+    </div>
+
+
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="plugins/bootstrap/js/popper.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/Sortable.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/perfect-scrollbar.jquery.min.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="plugins/sparkline/jquery.sparkline.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.js"></script>
+    <script src="js/validation.js"></script>
+    <script>
+        var sortable3 = document.getElementById('sortable-paso3'),sortable4=document.getElementById('sortable-paso4');
+        new Sortable(sortable3, {
+            animation: 150,
+            ghostClass: 'blue-background-class'
+        });
+        new Sortable(sortable4, {
+            animation: 150,
+            ghostClass: 'blue-background-class'
+        });
+        $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+    </script>
+</body>
+</html>
